@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Smart Buzz</string>
+    <string name="Splash_CD">Splash Screen for the app</string>
+    <string name="toolbar_title">Smart Buzz</string>
+    <string name="question_hint">First Question comes up</string>
+    <string name="first_question">What is 2*10*9*0*3*7=</string>
+    <string name="option1">0</string>
+    <string name="awake_message">Good Morning!Hope so you are wide awake now.</string>
+    <string name="second_question">The sum of 2+5+8+4=</string>
+
+
+</resources>

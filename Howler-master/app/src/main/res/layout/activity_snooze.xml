@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SnoozeActivity">
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/comic"
+        android:gravity="center"
+        android:hint="@string/question_hint"
+        android:maxLines="4"
+        android:padding="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328" />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question" />
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/comic"
+        android:hint="First option"
+        android:textSize="28sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkbox1"
+        app:layout_constraintLeft_toRightOf="@id/checkbox1" />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/checkbox1"
+        app:layout_constraintTop_toBottomOf="@id/checkbox1" />
+
+    <TextView
+        android:id="@+id/option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/comic"
+        android:hint="Second Option"
+        android:textSize="28sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkbox2"
+        app:layout_constraintLeft_toRightOf="@id/checkbox2" />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/checkbox2"
+        app:layout_constraintTop_toBottomOf="@id/checkbox2" />
+
+    <TextView
+        android:id="@+id/option3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/comic"
+        android:hint="Third Option"
+        android:textSize="28sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkbox3"
+        app:layout_constraintLeft_toRightOf="@id/checkbox3" />
+
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/checkbox3"
+        app:layout_constraintTop_toBottomOf="@id/checkbox3" />
+
+    <TextView
+        android:id="@+id/option4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/comic"
+        android:hint="Fourth Option"
+        android:textSize="28sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkbox4"
+        app:layout_constraintLeft_toRightOf="@id/checkbox4" />
+
+
+</android.support.constraint.ConstraintLayout>
